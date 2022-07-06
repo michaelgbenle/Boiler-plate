@@ -3,14 +3,11 @@ package database
 import (
 	"fmt"
 	"log"
-	"sync"
 )
 
 type PostgresDb struct {
 	DB *gorm.DB
 }
-
-var mu sync.Mutex
 
 //SetupDb sets up database and auto migrate schema
 func (pdb *PostgresDb) SetupDb(host, user, password, dbName, port string) error {
