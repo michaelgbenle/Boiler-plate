@@ -3,6 +3,7 @@ package server
 import (
 	"github.com/michaelgbenle/Boiler-plate/database"
 	"github.com/michaelgbenle/Boiler-plate/handlers"
+	"github.com/michaelgbenle/Boiler-plate/router"
 	"log"
 )
 
