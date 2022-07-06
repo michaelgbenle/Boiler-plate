@@ -1,11 +1,15 @@
 package server
 
-import "log"
+import (
+	"github.com/michaelgbenle/Boiler-plate/database"
+	"github.com/michaelgbenle/Boiler-plate/handlers"
+	"log"
+)
 
 func Start() error {
 	values := database.InitializeDbParameters()
 	var PDB = new(database.PostgresDb)
-	h := &handler.Handler{DB: PDB}
+	h := &handlers.Handler{DB: PDB}
 
 	err := PDB.SetupDb(values.Host, values.User, values.Password, values.DbName, values.Port)
 	if err != nil {
