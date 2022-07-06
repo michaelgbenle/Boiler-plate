@@ -1,6 +1,7 @@
 package database
 
 import (
+	"github.com/michaelgbenle/Boiler-plate/models"
 	"log"
 	"os"
 )
