@@ -1,6 +1,7 @@
 package database
 
 import (
+	"github.com/joho/godotenv"
 	"log"
 	"os"
 )
