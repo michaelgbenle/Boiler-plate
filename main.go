@@ -1,6 +1,9 @@
 package main
 
-import "log"
+import (
+	"github.com/michaelgbenle/Boiler-plate/server"
+	"log"
+)
 
 func main() {
 	err := server.Start()
